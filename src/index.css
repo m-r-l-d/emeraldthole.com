@@ -1,0 +1,110 @@
+@font-face {
+  font-family: Geneva9;
+  src: url("fonts/FindersKeepers.ttf");
+}
+
+@font-face {
+  font-family: Chicago_12;
+  src: url("fonts/ChiKareGo2.ttf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Layout: */
+.layout {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.col-main {
+  flex: 2;
+}
+
+.col-sidebar {
+  flex: 1;
+}
+
+body {
+  background: linear-gradient(
+      45deg,
+      #000 25%,
+      transparent 0,
+      transparent 75%,
+      #000 0,
+      #000
+    ),
+    linear-gradient(
+      45deg,
+      #000 25%,
+      transparent 0,
+      transparent 75%,
+      #000 0,
+      #000
+    );
+  background-color: #fff;
+  background-position: 0 0, 1px 1px;
+  background-size: 2px 2px;
+}
+
+html {
+  font-family: "Inconsolata", Menlo, Chicago, Geneva;
+  font-size: 18px;
+  letter-spacing: -0.025em;
+  min-height: 100vh;
+}
+
+h2 {
+  font-family: Chicago;
+  font-size: 1.5em;
+  margin-block-start: 0.4em;
+  margin-block-end: 0.4em;
+}
+
+.heading {
+  font-size: 3rem;
+}
+
+.desc {
+  font-family: Geneva_9;
+  font-size: 2em;
+  margin: 0.5em 0;
+}
+
+.center {
+  text-align: center;
+}
+
+p {
+  font-family: Chicago_12;
+  font-size: 1.2em;
+}
+
+li {
+  font-family: Geneva_9;
+  font-size: 1.5em;
+  line-height: 75%;
+}
+
+.modeless-dialog {
+  padding: 1em 2em;
+}
+
+.portfolio:hover span {
+  display: none;
+}
+
+.portfolio:hover:before {
+  content: "Coming soon";
+}
+
+@media only screen and (min-width: 640px) {
+  .layout {
+    display: flex;
+    justify-content: space-between;
+  }
+}

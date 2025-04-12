@@ -1,5 +1,3 @@
-import "./App.css";
-
 function App() {
   return (
     <>
@@ -74,6 +72,20 @@ function App() {
               </ul>
             </div>
           </div>
+
+          <div className="window">
+            <div className="title-bar">
+              {/* <button aria-label="Close" className="close"></button> */}
+              <h1 className="title">Education</h1>
+              {/* <button aria-label="Resize" className="resize"></button> */}
+            </div>
+            <div className="separator"></div>
+
+            <div className="modeless-dialog">
+              <h2>Macalester College — Bachelor of Arts, Computer Science</h2>
+              <p className="desc">St. Paul, MN 2015-2019</p>
+            </div>
+          </div>
         </div>
 
         <div className="col-main">
@@ -86,7 +98,7 @@ function App() {
             <div className="separator"></div>
 
             <div className="modeless-dialog">
-              <h3 className="subheading">Best Buy — Full Stack Engineer</h3>
+              <h2>Best Buy — Full Stack Engineer</h2>
               <p className="desc">Richfield, MN 2019-2025</p>
               <p>Key Responsibilities:</p>
               <ul>
@@ -172,30 +184,14 @@ function App() {
               </ul>
             </div>
           </div>
-
-          <div className="window">
-            <div className="title-bar">
-              {/* <button aria-label="Close" className="close"></button> */}
-              <h1 className="title">Education</h1>
-              {/* <button aria-label="Resize" className="resize"></button> */}
-            </div>
-            <div className="separator"></div>
-
-            <div className="modeless-dialog">
-              <h3 className="subheading">
-                Macalester College — Bachelor of Arts, Computer Science
-              </h3>
-              <p className="desc">St. Paul, MN 2015-2019</p>
-            </div>
-          </div>
         </div>
       </div>
 
       <div className="standard-dialog window">
-        <h3 className="subheading center">About this page</h3>
+        <h2 className="center">About this page</h2>
         <p className="desc center">
           Style based on{" "}
-          <a href="https://github.com/sakofchit/system.css">System OS theme</a>
+          <a href="https://github.com/sakofchit/system.css" target="_blank">System OS theme</a>
         </p>
       </div>
     </>
