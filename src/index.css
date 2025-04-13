@@ -59,7 +59,7 @@ html {
 }
 
 h2 {
-  font-family: Chicago;
+  font-family: Chicago_12;
   font-size: 1.5em;
   margin-block-start: 0.4em;
   margin-block-end: 0.4em;
@@ -67,6 +67,7 @@ h2 {
 
 .heading {
   font-size: 3rem;
+  font-family: Chicago_12;
 }
 
 .desc {
