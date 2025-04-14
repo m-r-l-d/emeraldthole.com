@@ -1,7 +1,14 @@
+import { useState } from "react";
+
 function App() {
+  const [hideContact, setHideContact] = useState(false);
+  const [hideSkills, setHideSkills] = useState(false);
+  const [hideEducation, setHideEducation] = useState(false);
+  const [hideExperience, setHideExperience] = useState(false);
+
   return (
     <>
-      <div className="window standard-dialog">
+      <div className="window standard-dialog" style={{marginBottom: 0}}>
         <h1 className="heading center">Emerald Thole</h1>
         <p className="desc center">
           Web developer, artist, gem cutter based in Saint Paul, MN
@@ -10,15 +17,15 @@ function App() {
 
       <div className="layout">
         <div className="col-sidebar">
-          <div className="window">
+          <div className="window sidebar">
             <div className="title-bar">
               {/* <button aria-label="Close" className="close"></button> */}
               <h1 className="title">Contact</h1>
-              {/* <button aria-label="Resize" className="resize"></button> */}
+              <button aria-label="Resize" className="resize" onClick={() => setHideContact(!hideContact)}></button>
             </div>
-            <div className="separator"></div>
+            <div className="separator" style={{ display: hideContact ? "none" : "block" }}></div>
 
-            <div className="modeless-dialog">
+            <div className="modeless-dialog" style={{ display: hideContact ? "none" : "block" }}>
               <p>
                 emeraldbay53@gmail.com (until I get an email server set up at
                 this domain!)
@@ -44,15 +51,15 @@ function App() {
             </div>
           </div>
 
-          <div className="window">
+          <div className="window sidebar">
             <div className="title-bar">
               {/* <button aria-label="Close" className="close"></button> */}
               <h1 className="title">Skills</h1>
-              {/* <button aria-label="Resize" className="resize"></button> */}
+              <button aria-label="Resize" className="resize" onClick={() => setHideSkills(!hideSkills)}></button>
             </div>
-            <div className="separator"></div>
+            <div className="separator" style={{ display: hideSkills ? "none" : "block" }}></div>
 
-            <div className="modeless-dialog">
+            <div className="modeless-dialog" style={{ display: hideSkills ? "none" : "block" }}>
               <ul>
                 <li>HTML/CSS</li>
                 <li>Javascript/Typescript</li>
@@ -73,15 +80,15 @@ function App() {
             </div>
           </div>
 
-          <div className="window">
+          <div className="window sidebar">
             <div className="title-bar">
               {/* <button aria-label="Close" className="close"></button> */}
               <h1 className="title">Education</h1>
-              {/* <button aria-label="Resize" className="resize"></button> */}
+              <button aria-label="Resize" className="resize" onClick={() => setHideEducation(!hideEducation)}></button>
             </div>
-            <div className="separator"></div>
+            <div className="separator" style={{ display: hideEducation ? "none" : "block" }}></div>
 
-            <div className="modeless-dialog">
+            <div className="modeless-dialog" style={{ display: hideEducation ? "none" : "block" }}>
               <h2>Macalester College — Bachelor of Arts, Computer Science</h2>
               <p className="desc">St. Paul, MN 2015-2019</p>
             </div>
@@ -93,11 +100,15 @@ function App() {
             <div className="title-bar">
               {/* <button aria-label="Close" className="close"></button> */}
               <h1 className="title">Job Experience</h1>
-              {/* <button aria-label="Resize" className="resize"></button> */}
+              <button
+                aria-label="Resize"
+                className="resize"
+                onClick={() => setHideExperience(!hideExperience)}
+              ></button>
             </div>
-            <div className="separator"></div>
+            <div className="separator" style={{ display: hideExperience ? "none" : "block" }}></div>
 
-            <div className="modeless-dialog">
+            <div className="modeless-dialog" style={{ display: hideExperience ? "none" : "block" }}>
               <h2>Best Buy — Full Stack Engineer</h2>
               <p className="desc">Richfield, MN 2019-2025</p>
               <p>Key Responsibilities:</p>
@@ -187,11 +198,13 @@ function App() {
         </div>
       </div>
 
-      <div className="standard-dialog window">
+      <div className="standard-dialog window" style={{marginTop: 0}}>
         <h2 className="center">About this page</h2>
         <p className="desc center">
           Style based on{" "}
-          <a href="https://github.com/sakofchit/system.css" target="_blank">System OS theme</a>
+          <a href="https://github.com/sakofchit/system.css" target="_blank">
+            System OS theme
+          </a>
         </p>
       </div>
     </>
