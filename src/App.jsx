@@ -17,7 +17,7 @@ function App() {
 
       <div className="layout">
         <div className="col-sidebar">
-          <div className="window sidebar">
+          <div className="window left">
             <div className="title-bar">
               {/* <button aria-label="Close" className="close"></button> */}
               <h1 className="title">Contact</h1>
@@ -51,7 +51,7 @@ function App() {
             </div>
           </div>
 
-          <div className="window sidebar">
+          <div className="window left">
             <div className="title-bar">
               {/* <button aria-label="Close" className="close"></button> */}
               <h1 className="title">Skills</h1>
@@ -80,7 +80,7 @@ function App() {
             </div>
           </div>
 
-          <div className="window sidebar">
+          <div className="window left">
             <div className="title-bar">
               {/* <button aria-label="Close" className="close"></button> */}
               <h1 className="title">Education</h1>
@@ -96,7 +96,7 @@ function App() {
         </div>
 
         <div className="col-main">
-          <div className="window">
+          <div className="window main">
             <div className="title-bar">
               {/* <button aria-label="Close" className="close"></button> */}
               <h1 className="title">Job Experience</h1>

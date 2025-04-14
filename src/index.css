@@ -29,9 +29,13 @@ body {
   flex: 1;
 }
 
-.sidebar {
-    margin-right: 0;
+.left {
+  margin-right: 1rem;
 }
+
+.main {
+    margin-top: 0;
+  }
 
 body {
   background: linear-gradient(
@@ -111,5 +115,13 @@ li {
   .layout {
     display: flex;
     justify-content: space-between;
+  }
+
+  .left {
+    margin-right: 0;
+  }
+
+  .main {
+    margin-top: 1rem;
   }
 }
