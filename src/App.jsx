@@ -30,8 +30,7 @@ function App() {
                 emeraldbay53@gmail.com (until I get an email server set up at
                 this domain!)
               </p>
-              <p>651-354-4209</p>
-              <div>
+              <div className="btn-container">
                 <a
                   href="https://github.com/m-r-l-d"
                   target="_blank"
@@ -40,13 +39,22 @@ function App() {
                 >
                   Github
                 </a>
-                <button
-                  className="btn portfolio"
-                  style={{ marginLeft: 6 }}
-                  disabled
+                <a
+                  href="https://mrld.me"
+                  target="_blank"
+                  class="button"
+                  className="btn"
                 >
                   <span>Portfolio</span>
-                </button>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/emerald-thole"
+                  target="_blank"
+                  class="button"
+                  className="btn"
+                >
+                  <span>LinkedIn</span>
+                </a>
               </div>
             </div>
           </div>

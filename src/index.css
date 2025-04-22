@@ -34,8 +34,8 @@ body {
 }
 
 .main {
-    margin-top: 0;
-  }
+  margin-top: 0;
+}
 
 body {
   background: linear-gradient(
@@ -99,6 +99,15 @@ li {
   line-height: 75%;
 }
 
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  margin: 0px 3px;
+}
+
 .modeless-dialog {
   padding: 1em 2em;
 }
@@ -111,7 +120,7 @@ li {
   content: "Coming soon";
 }
 
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 840px) {
   .layout {
     display: flex;
     justify-content: space-between;
